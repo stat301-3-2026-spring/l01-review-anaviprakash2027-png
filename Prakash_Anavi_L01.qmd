@@ -44,7 +44,16 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+- Clean the data (exploratory data analysis) and split it into training and testing datasets.
+- Resample the training data by repeatedly folding it.
+- Create recipes to preprocess the data before the machine learning process begins.
+- Specify the model engine and model type. Also define hyperparameters for tuning. 
+- Define the machine learning workflow with the model and recipe.
+- Tune hyperparameters by extracting the model's parameters and updating each one to fit a specific range. Create a grid with levels to tune each hyperparameter to.
+- Fit the workflow to a grid with the resampled data and hyperparameters grid.
+- Collect metrics to analyze the tuned model. 
+
+- To determine the best model, compare metrics and do a final model fit with the best model. Then, test the model using the testing data and analyze it. 
 
 :::
 
@@ -55,7 +64,9 @@ Explain the difference between supervised and unsupervised learning.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Supervised learning includes an outcome and target variable stearing the modeling process, whereas in unsupervised learning neither exists. Instead, the objective is to extract information from the data.
+
+TKTK outcome measures success which is good in supervised learning 
 
 :::
 
@@ -68,7 +79,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Descriptive models describe or illustrate data to visually emphasize a trend in the data. 
 
 :::
 
@@ -77,7 +88,8 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Inferential models produce an answer to a research hypothesis. They are dependent on underlying assumptions about the data.
+- casual 
 
 :::
 
@@ -86,7 +98,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Predictive models answer prediction questions by producing a prediction for new data related to the question. 
 
 :::
 
@@ -101,7 +113,7 @@ What does it mean to be a mechanistic model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+TKTK formulaic 
 
 :::
 
@@ -112,7 +124,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+TKT free form !
 
 :::
 
@@ -123,7 +135,7 @@ How does the mechanistic and empirically driven model terminology relate to the 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Parametric models are mechanistic, meaning they assume that the the data follows a known form and equation. The model aims to estimate a set of parameters to fit the equation. Nonparametric models are empirically driven, meaning they don't follow any specific form. These models are more complex and hold no assumptions about the form of the model. 
 
 :::
 
@@ -134,8 +146,7 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+Mechanistic models are easier to interpret because they are more formulaic and look for casual relationships. Empirically driven models, however, look at how to fit data patterns, which can be more complex. 
 :::
 
 #### Part (e)
