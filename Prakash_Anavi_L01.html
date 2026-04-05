@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Anavi Prakash">
-<meta name="dcterms.date" content="2026-04-01">
+<meta name="dcterms.date" content="2026-04-05">
 
 <title>L01 Anavi Prakash</title>
 <style>
@@ -2200,7 +2200,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 1, 2026</p>
+      <p class="date">April 5, 2026</p>
     </div>
   </div>
   
@@ -2246,15 +2246,14 @@ Solution
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><p>Clean the data (exploratory data analysis) and split it into training and testing datasets.</p></li>
-<li><p>Resample the training data by repeatedly folding it.</p></li>
-<li><p>Create recipes to preprocess the data before the machine learning process begins.</p></li>
-<li><p>Specify the model engine and model type. Also define hyperparameters for tuning.</p></li>
-<li><p>Define the machine learning workflow with the model and recipe.</p></li>
-<li><p>Tune hyperparameters by extracting the model’s parameters and updating each one to fit a specific range. Create a grid with levels to tune each hyperparameter to.</p></li>
-<li><p>Fit the workflow to a grid with the resampled data and hyperparameters grid.</p></li>
-<li><p>Collect metrics to analyze the tuned model.</p></li>
-<li><p>To determine the best model, compare metrics and do a final model fit with the best model. Then, test the model using the testing data and analyze it.</p></li>
+<li>Identify the target variable</li>
+<li>Understand the data through an exploratory data analysis</li>
+<li>Split the data into training and testing sets</li>
+<li>Preprocess and feature engineer the data using recipes</li>
+<li>Choose a model and create a workflow</li>
+<li>Train the model and tune its hyperparameters</li>
+<li>Evaluate the model</li>
+<li>Apply the model to unseen data to track success and performance</li>
 </ul>
 </div>
 </div>
@@ -2272,8 +2271,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Supervised learning includes an outcome and target variable stearing the modeling process, whereas in unsupervised learning neither exists. Instead, the objective is to extract information from the data.</p>
-<p>TKTK outcome measures success which is good in supervised learning</p>
+<p>Supervised learning includes an outcome and target variable steering the modeling process, meaning the model can measure its accuracy and learn over time. In unsupervised learning, however, the objective is to extract information and unstated patterns in the data.</p>
 </div>
 </div>
 </section>
@@ -2292,7 +2290,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Descriptive models describe or illustrate data to visually emphasize a trend in the data.</p>
+<p>Descriptive models describe data that explains what trends occurred.</p>
 </div>
 </div>
 </section>
@@ -2308,7 +2306,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Inferential models produce an answer to a research hypothesis. They are dependent on underlying assumptions about the data. - casual</p>
+<p>Inferential models produce an answer to a research hypothesis and draw population-based conclusions based on sample data.</p>
 </div>
 </div>
 </section>
@@ -2324,7 +2322,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Predictive models answer prediction questions by producing a prediction for new data related to the question.</p>
+<p>Predictive models use data to produce a prediction for new data related to the question.</p>
 </div>
 </div>
 </section>
@@ -2345,7 +2343,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>TKTK formulaic</p>
+<p>Mechanistic models are formulaic and use equations to represent trends in the data.</p>
 </div>
 </div>
 </section>
@@ -2362,7 +2360,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>TKT free form !</p>
+<p>Empirically driven models look to the data to draw conclusions about it, meaning it is more free-form and doesn’t depend on specific formulas.</p>
 </div>
 </div>
 </section>
@@ -2396,7 +2394,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Mechanistic models are easier to interpret because they are more formulaic and look for casual relationships. Empirically driven models, however, look at how to fit data patterns, which can be more complex.</p>
+<p>Mechanistic models are easier to interpret because they are more formulaic and look for casual relationships. This means that each parameter has a clear interpretation in explaining the relationships between variables. Empirically driven models, however, look at how to fit data patterns, which can be more complex.</p>
 </div>
 </div>
 </section>
@@ -2413,7 +2411,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Since mechanistic driven models, like parametric models, are fit to a formula, they are less flexible in the interpretations they can create. Empirically driven models, however, are detached from any equations, so they are more flexible when adjusting to the data at hand and drawing information from it.</p>
 </div>
 </div>
 </section>
@@ -2430,7 +2428,8 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Since mechanistic models are less flexible and therefore more rigid, there is more bias in them. This means that if its assumptions are wrong, the model will miss patterns. As a rigid model, they have minimal changes with different training data because they follow a fixed structure. Thus, the model is stable, but may underfit the data.</p>
+<p>Empirical models, however, are more flexible, meaning there is greater variance because it captures everything and is sensitive to noise. They have low bias, however, because of their flexibility, which means complex relationships in the data are captured well. Thus, the model is less stable and may overfit the data.</p>
 </div>
 </div>
 </section>
@@ -2448,7 +2447,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Regression ML problems have a continuous outcome variable while classification ones have a categorical outcome variable.</p>
 </div>
 </div>
 </section>
@@ -2465,7 +2464,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Stratification by the target variable is helpful because it creates a similar distribution of the target variable in each split of the data. This allows for a more representative data sample, which leads to more accurate information to be taken from the model.</p>
 </div>
 </div>
 </section>
@@ -2482,7 +2481,8 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>V-fold cross validation splits the data into v folds and iterates through each fold, with one fold being used as a test and the others being used to train the model. The process is repeated r times to use a different range of training data for the model, meaning a different fold is reserved as the test one each time.</p>
+<p>The RMSE of each fold is calculated and averaged to produce a single value. This ensures the RMSE value is a reliable and stable representation of the model’s performance.</p>
 </div>
 </div>
 </section>
@@ -2499,7 +2499,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>If a dataset is smaller, using one fold as the test may leave too little data for training, so using boostrap resampling — which resamples with new ‘replacement’ datasets — allows for most of the data to be used to train the model. Further, bcause each resample has a slightly different estimate, boostrap resampling can create confidence intervals for metrics like RMSE, which is helpful in understanding the range in which the model typically performs on new data.</p>
 </div>
 </div>
 </section>
@@ -2516,7 +2516,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Model tuning is when the best hyperparamters are chosen to improve model performance. The tuning process goes through a variety of combinations of hyperparameters to train the model and evaluate their performance to determine which hyperparamters optimize the model’s accuracy. This allows a model to adapt to a specific dataset and strike a balance between over and underfitting the data, which can happen with certain hyperparameter values.</p>
 </div>
 </div>
 </section>
@@ -2533,7 +2533,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>RMSE and R^2</p>
 </div>
 </div>
 <p>What are two common performance metrics when dealing with a classification ML problem?</p>
@@ -2547,7 +2547,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Accuracy and ROC-AUC</p>
 </div>
 </div>
 </section>
@@ -2568,7 +2568,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Inferential — using previous data on how the number of service calls impacts a customer’s likelihood of churn, a model can be used to infer whether other customers may follow the same trend depending on the number of service calls they receive. This quesiton looks at the relationships between variables and how much one impacts the other.</p>
 </div>
 </div>
 <ol start="2" type="1">
@@ -2584,7 +2584,7 @@ Solution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Predictive — the goal of the question is to accurately predict the likelihood of churn, not look into specific variables and how they relate to it. Further, the question looks to predicting something that will occur in the future, not infer what may happen based on past knowledge.</p>
 </div>
 </div>
 </section>
